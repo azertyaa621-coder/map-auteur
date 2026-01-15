@@ -1,0 +1,2128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ca4f32082d3a33d5499fabe07bea73c4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ca4f32082d3a33d5499fabe07bea73c4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ca4f32082d3a33d5499fabe07bea73c4 = L.map(
+                "map_ca4f32082d3a33d5499fabe07bea73c4",
+                {
+                    center: [44.32391891891891, 13.365748648648648],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 3,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_ca4f32082d3a33d5499fabe07bea73c4);
+
+            
+
+        
+    
+            var tile_layer_42ad27cddb24cf5005e6c7f93402451f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_42ad27cddb24cf5005e6c7f93402451f.addTo(map_ca4f32082d3a33d5499fabe07bea73c4);
+        
+    
+            var feature_group_0f5af4d221da9f8230614e313ca7ea42 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_b5fc81080bffbd2320c9ee8f89d7a1a6 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_3d62af7ef5be50d1c2dafd2e944578ca = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_b5fc81080bffbd2320c9ee8f89d7a1a6);
+        
+    
+            var div_icon_f4003f7aa8a371f1e0250d39761478e7 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eVoltaire\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_def075e99652dab0c1d5235b14a1e4b2 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_b54ff1b239f7c85137fd4e8c53bab8ba = $(`<div id="html_b54ff1b239f7c85137fd4e8c53bab8ba" style="width: 100.0%; height: 100.0%;"><b>Voltaire</b><br>France</div>`)[0];
+                popup_def075e99652dab0c1d5235b14a1e4b2.setContent(html_b54ff1b239f7c85137fd4e8c53bab8ba);
+            
+        
+
+        marker_3d62af7ef5be50d1c2dafd2e944578ca.bindPopup(popup_def075e99652dab0c1d5235b14a1e4b2)
+        ;
+
+        
+    
+    
+            marker_3d62af7ef5be50d1c2dafd2e944578ca.bindTooltip(
+                `<div>
+                     Voltaire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3d62af7ef5be50d1c2dafd2e944578ca.setIcon(div_icon_f4003f7aa8a371f1e0250d39761478e7);
+            
+    
+            var marker_94ec561ee825eb27c4cd12103aec12be = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_b5fc81080bffbd2320c9ee8f89d7a1a6);
+        
+    
+            var div_icon_2262ad596c1d25d0263dcb62ed412f62 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eMoli\u00e8re\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_443415e4496311a5c00e35cb76773767 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_b7b478a5c68939c6e9a28ff237bbf533 = $(`<div id="html_b7b478a5c68939c6e9a28ff237bbf533" style="width: 100.0%; height: 100.0%;"><b>Molière</b><br>France</div>`)[0];
+                popup_443415e4496311a5c00e35cb76773767.setContent(html_b7b478a5c68939c6e9a28ff237bbf533);
+            
+        
+
+        marker_94ec561ee825eb27c4cd12103aec12be.bindPopup(popup_443415e4496311a5c00e35cb76773767)
+        ;
+
+        
+    
+    
+            marker_94ec561ee825eb27c4cd12103aec12be.bindTooltip(
+                `<div>
+                     Molière
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_94ec561ee825eb27c4cd12103aec12be.setIcon(div_icon_2262ad596c1d25d0263dcb62ed412f62);
+            
+    
+            var marker_b31161d182b0310bd42f91ff40bc782a = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_b5fc81080bffbd2320c9ee8f89d7a1a6);
+        
+    
+            var div_icon_e17d4136011e8439402b6eaf0141d532 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eMadame de Sta\u00ebl\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_c955863950dcd71a3f373391a7e679a2 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_0d91946b7a330c7a7bfb24988413c215 = $(`<div id="html_0d91946b7a330c7a7bfb24988413c215" style="width: 100.0%; height: 100.0%;"><b>Madame de Staël</b><br>France</div>`)[0];
+                popup_c955863950dcd71a3f373391a7e679a2.setContent(html_0d91946b7a330c7a7bfb24988413c215);
+            
+        
+
+        marker_b31161d182b0310bd42f91ff40bc782a.bindPopup(popup_c955863950dcd71a3f373391a7e679a2)
+        ;
+
+        
+    
+    
+            marker_b31161d182b0310bd42f91ff40bc782a.bindTooltip(
+                `<div>
+                     Madame de Staël
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b31161d182b0310bd42f91ff40bc782a.setIcon(div_icon_e17d4136011e8439402b6eaf0141d532);
+            
+    
+            var marker_2c3d82690329bd32f6e03be344cef4a8 = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_b5fc81080bffbd2320c9ee8f89d7a1a6);
+        
+    
+            var div_icon_bfea7f36000d5b4df79aa77e670014b2 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eBeaumarchais\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_13339ea934cfa431d95091bdb26e3505 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_150cfec4715ed2160d786cbe6a69d1ef = $(`<div id="html_150cfec4715ed2160d786cbe6a69d1ef" style="width: 100.0%; height: 100.0%;"><b>Beaumarchais</b><br>France</div>`)[0];
+                popup_13339ea934cfa431d95091bdb26e3505.setContent(html_150cfec4715ed2160d786cbe6a69d1ef);
+            
+        
+
+        marker_2c3d82690329bd32f6e03be344cef4a8.bindPopup(popup_13339ea934cfa431d95091bdb26e3505)
+        ;
+
+        
+    
+    
+            marker_2c3d82690329bd32f6e03be344cef4a8.bindTooltip(
+                `<div>
+                     Beaumarchais
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2c3d82690329bd32f6e03be344cef4a8.setIcon(div_icon_bfea7f36000d5b4df79aa77e670014b2);
+            
+    
+            var marker_1e88a9321e629f8f37a7d46b24e58558 = L.marker(
+                [47.8625, 5.3336],
+                {
+}
+            ).addTo(marker_cluster_b5fc81080bffbd2320c9ee8f89d7a1a6);
+        
+    
+            var div_icon_5e15aa3ff7b496ce00653a3409ab4bb9 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eDenis Diderot\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_efc0d5fba3886db8dc781209b5d5e4c5 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_91481d5ceac54b472423932fd6dbdac4 = $(`<div id="html_91481d5ceac54b472423932fd6dbdac4" style="width: 100.0%; height: 100.0%;"><b>Denis Diderot</b><br>France</div>`)[0];
+                popup_efc0d5fba3886db8dc781209b5d5e4c5.setContent(html_91481d5ceac54b472423932fd6dbdac4);
+            
+        
+
+        marker_1e88a9321e629f8f37a7d46b24e58558.bindPopup(popup_efc0d5fba3886db8dc781209b5d5e4c5)
+        ;
+
+        
+    
+    
+            marker_1e88a9321e629f8f37a7d46b24e58558.bindTooltip(
+                `<div>
+                     Denis Diderot
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1e88a9321e629f8f37a7d46b24e58558.setIcon(div_icon_5e15aa3ff7b496ce00653a3409ab4bb9);
+            
+    
+            var marker_04c4547c85be91b59a909005b9e2c617 = L.marker(
+                [44.7144, -0.5236],
+                {
+}
+            ).addTo(marker_cluster_b5fc81080bffbd2320c9ee8f89d7a1a6);
+        
+    
+            var div_icon_e390c476ad7427948df1f6606668d9d3 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eMontesquieu\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_b88844ecc2f56bb8f2dc9e3be62ef3f7 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_381399d8f686911cc71cf2f061c7999a = $(`<div id="html_381399d8f686911cc71cf2f061c7999a" style="width: 100.0%; height: 100.0%;"><b>Montesquieu</b><br>France</div>`)[0];
+                popup_b88844ecc2f56bb8f2dc9e3be62ef3f7.setContent(html_381399d8f686911cc71cf2f061c7999a);
+            
+        
+
+        marker_04c4547c85be91b59a909005b9e2c617.bindPopup(popup_b88844ecc2f56bb8f2dc9e3be62ef3f7)
+        ;
+
+        
+    
+    
+            marker_04c4547c85be91b59a909005b9e2c617.bindTooltip(
+                `<div>
+                     Montesquieu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_04c4547c85be91b59a909005b9e2c617.setIcon(div_icon_e390c476ad7427948df1f6606668d9d3);
+            
+    
+            var marker_e8ffcc2d8a2bafb54320f095e8b34821 = L.marker(
+                [48.6493, -2.0257],
+                {
+}
+            ).addTo(marker_cluster_b5fc81080bffbd2320c9ee8f89d7a1a6);
+        
+    
+            var div_icon_31b75563b5111bbe9c66826fd6e77e9e = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eChateaubriand\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_375a7e7e358e8144b028ffa949d99a48 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_05b918314a4c8bc3c8c92f4e764187be = $(`<div id="html_05b918314a4c8bc3c8c92f4e764187be" style="width: 100.0%; height: 100.0%;"><b>Chateaubriand</b><br>France</div>`)[0];
+                popup_375a7e7e358e8144b028ffa949d99a48.setContent(html_05b918314a4c8bc3c8c92f4e764187be);
+            
+        
+
+        marker_e8ffcc2d8a2bafb54320f095e8b34821.bindPopup(popup_375a7e7e358e8144b028ffa949d99a48)
+        ;
+
+        
+    
+    
+            marker_e8ffcc2d8a2bafb54320f095e8b34821.bindTooltip(
+                `<div>
+                     Chateaubriand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e8ffcc2d8a2bafb54320f095e8b34821.setIcon(div_icon_31b75563b5111bbe9c66826fd6e77e9e);
+            
+    
+            var marker_2bef65d27d88a3ea172d018832452a27 = L.marker(
+                [47.2378, 6.0241],
+                {
+}
+            ).addTo(marker_cluster_b5fc81080bffbd2320c9ee8f89d7a1a6);
+        
+    
+            var div_icon_01a1459a65b15c06bc3fac64ad47ecad = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eVictor Hugo\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_ebc7f794a5711143264bddac3efa4257 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_809afb87bf7e3483a7ea9e128842fca9 = $(`<div id="html_809afb87bf7e3483a7ea9e128842fca9" style="width: 100.0%; height: 100.0%;"><b>Victor Hugo</b><br>France</div>`)[0];
+                popup_ebc7f794a5711143264bddac3efa4257.setContent(html_809afb87bf7e3483a7ea9e128842fca9);
+            
+        
+
+        marker_2bef65d27d88a3ea172d018832452a27.bindPopup(popup_ebc7f794a5711143264bddac3efa4257)
+        ;
+
+        
+    
+    
+            marker_2bef65d27d88a3ea172d018832452a27.bindTooltip(
+                `<div>
+                     Victor Hugo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2bef65d27d88a3ea172d018832452a27.setIcon(div_icon_01a1459a65b15c06bc3fac64ad47ecad);
+            
+    
+            var marker_e81d6d7399c0cb4d78adc11dfcabe849 = L.marker(
+                [49.4944, 0.1079],
+                {
+}
+            ).addTo(marker_cluster_b5fc81080bffbd2320c9ee8f89d7a1a6);
+        
+    
+            var div_icon_2ae95601154cfb3de3579f175f7b2b0c = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eBernardin de Saint-Pierre\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_d603bce07dc17db91343958afaac55ae = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_8b983ee6c84969e21c933b63a6a3a764 = $(`<div id="html_8b983ee6c84969e21c933b63a6a3a764" style="width: 100.0%; height: 100.0%;"><b>Bernardin de Saint-Pierre</b><br>France</div>`)[0];
+                popup_d603bce07dc17db91343958afaac55ae.setContent(html_8b983ee6c84969e21c933b63a6a3a764);
+            
+        
+
+        marker_e81d6d7399c0cb4d78adc11dfcabe849.bindPopup(popup_d603bce07dc17db91343958afaac55ae)
+        ;
+
+        
+    
+    
+            marker_e81d6d7399c0cb4d78adc11dfcabe849.bindTooltip(
+                `<div>
+                     Bernardin de Saint-Pierre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e81d6d7399c0cb4d78adc11dfcabe849.setIcon(div_icon_2ae95601154cfb3de3579f175f7b2b0c);
+            
+    
+            var marker_58407b7b8151d6dac3532e66a4fcfcdb = L.marker(
+                [44.889, 1.2167],
+                {
+}
+            ).addTo(marker_cluster_b5fc81080bffbd2320c9ee8f89d7a1a6);
+        
+    
+            var div_icon_30970540085129eba8f50e12aabe28fb = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eF\u00e9nelon\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_5ff8c788acbb0d493406ce6acaddf52d = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_7abd31e021ddf483301119c060b984ea = $(`<div id="html_7abd31e021ddf483301119c060b984ea" style="width: 100.0%; height: 100.0%;"><b>Fénelon</b><br>France</div>`)[0];
+                popup_5ff8c788acbb0d493406ce6acaddf52d.setContent(html_7abd31e021ddf483301119c060b984ea);
+            
+        
+
+        marker_58407b7b8151d6dac3532e66a4fcfcdb.bindPopup(popup_5ff8c788acbb0d493406ce6acaddf52d)
+        ;
+
+        
+    
+    
+            marker_58407b7b8151d6dac3532e66a4fcfcdb.bindTooltip(
+                `<div>
+                     Fénelon
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_58407b7b8151d6dac3532e66a4fcfcdb.setIcon(div_icon_30970540085129eba8f50e12aabe28fb);
+            
+    
+            var marker_91fbea54baffa43e9134494c063f5f37 = L.marker(
+                [47.2378, 6.0241],
+                {
+}
+            ).addTo(marker_cluster_b5fc81080bffbd2320c9ee8f89d7a1a6);
+        
+    
+            var div_icon_4acee08ec0a6c7f77a19a3f77642317d = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eCharles Nodier\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_f9c3dbe52801822844a80134d04b4feb = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_85c054755357d3f0c9692019736703f5 = $(`<div id="html_85c054755357d3f0c9692019736703f5" style="width: 100.0%; height: 100.0%;"><b>Charles Nodier</b><br>France</div>`)[0];
+                popup_f9c3dbe52801822844a80134d04b4feb.setContent(html_85c054755357d3f0c9692019736703f5);
+            
+        
+
+        marker_91fbea54baffa43e9134494c063f5f37.bindPopup(popup_f9c3dbe52801822844a80134d04b4feb)
+        ;
+
+        
+    
+    
+            marker_91fbea54baffa43e9134494c063f5f37.bindTooltip(
+                `<div>
+                     Charles Nodier
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_91fbea54baffa43e9134494c063f5f37.setIcon(div_icon_4acee08ec0a6c7f77a19a3f77642317d);
+            
+    
+            var marker_830c38dd9e73dd8c4494267071bba914 = L.marker(
+                [41.0082, 28.9784],
+                {
+}
+            ).addTo(marker_cluster_b5fc81080bffbd2320c9ee8f89d7a1a6);
+        
+    
+            var div_icon_9d71ef3fbb32dabad179e5aa2cf8ddf1 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eAndr\u00e9 Ch\u00e9nier\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_735e904818705a7a3c93c57e0489a809 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_a4ae7c34b77025ac999fc9630b323b79 = $(`<div id="html_a4ae7c34b77025ac999fc9630b323b79" style="width: 100.0%; height: 100.0%;"><b>André Chénier</b><br>France</div>`)[0];
+                popup_735e904818705a7a3c93c57e0489a809.setContent(html_a4ae7c34b77025ac999fc9630b323b79);
+            
+        
+
+        marker_830c38dd9e73dd8c4494267071bba914.bindPopup(popup_735e904818705a7a3c93c57e0489a809)
+        ;
+
+        
+    
+    
+            marker_830c38dd9e73dd8c4494267071bba914.bindTooltip(
+                `<div>
+                     André Chénier
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_830c38dd9e73dd8c4494267071bba914.setIcon(div_icon_9d71ef3fbb32dabad179e5aa2cf8ddf1);
+            
+    
+            var marker_633a78336e80a0c654ca601221f02db9 = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_b5fc81080bffbd2320c9ee8f89d7a1a6);
+        
+    
+            var div_icon_9c375c65e704c6a3ee064a70180f1814 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003ePaul-Louis Courier\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_d94b6f929fb922c6043c61bba6076928 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_b9954b275ad5f673d5528f6fa878c6ba = $(`<div id="html_b9954b275ad5f673d5528f6fa878c6ba" style="width: 100.0%; height: 100.0%;"><b>Paul-Louis Courier</b><br>France</div>`)[0];
+                popup_d94b6f929fb922c6043c61bba6076928.setContent(html_b9954b275ad5f673d5528f6fa878c6ba);
+            
+        
+
+        marker_633a78336e80a0c654ca601221f02db9.bindPopup(popup_d94b6f929fb922c6043c61bba6076928)
+        ;
+
+        
+    
+    
+            marker_633a78336e80a0c654ca601221f02db9.bindTooltip(
+                `<div>
+                     Paul-Louis Courier
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_633a78336e80a0c654ca601221f02db9.setIcon(div_icon_9c375c65e704c6a3ee064a70180f1814);
+            
+    
+            var marker_1faf867fce05fdb39d79048f3f60c2ec = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(marker_cluster_b5fc81080bffbd2320c9ee8f89d7a1a6);
+        
+    
+            var div_icon_29f52ea36519c8a389b63c673ef42015 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eMadame de S\u00e9vign\u00e9\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_64b991d8185baba14cda883eb861a488 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_e8ad19237d187471f5ae55a30ad0f416 = $(`<div id="html_e8ad19237d187471f5ae55a30ad0f416" style="width: 100.0%; height: 100.0%;"><b>Madame de Sévigné</b><br>France</div>`)[0];
+                popup_64b991d8185baba14cda883eb861a488.setContent(html_e8ad19237d187471f5ae55a30ad0f416);
+            
+        
+
+        marker_1faf867fce05fdb39d79048f3f60c2ec.bindPopup(popup_64b991d8185baba14cda883eb861a488)
+        ;
+
+        
+    
+    
+            marker_1faf867fce05fdb39d79048f3f60c2ec.bindTooltip(
+                `<div>
+                     Madame de Sévigné
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1faf867fce05fdb39d79048f3f60c2ec.setIcon(div_icon_29f52ea36519c8a389b63c673ef42015);
+            
+    
+            var marker_8e38b0c737f81de45d8b896fc0617daa = L.marker(
+                [49.9916, 3.0736],
+                {
+}
+            ).addTo(marker_cluster_b5fc81080bffbd2320c9ee8f89d7a1a6);
+        
+    
+            var div_icon_11f58a72987634cea8de19c958bbe9c1 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eG\u00e9n\u00e9ral Foy\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_ba1bb9e4b841c57d8d1f5eb63d561236 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_41181320333a3c531a2cb25186469650 = $(`<div id="html_41181320333a3c531a2cb25186469650" style="width: 100.0%; height: 100.0%;"><b>Général Foy</b><br>France</div>`)[0];
+                popup_ba1bb9e4b841c57d8d1f5eb63d561236.setContent(html_41181320333a3c531a2cb25186469650);
+            
+        
+
+        marker_8e38b0c737f81de45d8b896fc0617daa.bindPopup(popup_ba1bb9e4b841c57d8d1f5eb63d561236)
+        ;
+
+        
+    
+    
+            marker_8e38b0c737f81de45d8b896fc0617daa.bindTooltip(
+                `<div>
+                     Général Foy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8e38b0c737f81de45d8b896fc0617daa.setIcon(div_icon_11f58a72987634cea8de19c958bbe9c1);
+            
+    
+            var marker_eebb5c60fa88fca50fcf2b866744c84f = L.marker(
+                [45.764, 4.8357],
+                {
+}
+            ).addTo(marker_cluster_b5fc81080bffbd2320c9ee8f89d7a1a6);
+        
+    
+            var div_icon_31659ae2e280942aadf85cd3444ff897 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eBallanche\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_ace3e74e11dc599e831ec2d430d6e7be = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_3d6f58ca19e70ef72999e04de103c9b0 = $(`<div id="html_3d6f58ca19e70ef72999e04de103c9b0" style="width: 100.0%; height: 100.0%;"><b>Ballanche</b><br>France</div>`)[0];
+                popup_ace3e74e11dc599e831ec2d430d6e7be.setContent(html_3d6f58ca19e70ef72999e04de103c9b0);
+            
+        
+
+        marker_eebb5c60fa88fca50fcf2b866744c84f.bindPopup(popup_ace3e74e11dc599e831ec2d430d6e7be)
+        ;
+
+        
+    
+    
+            marker_eebb5c60fa88fca50fcf2b866744c84f.bindTooltip(
+                `<div>
+                     Ballanche
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eebb5c60fa88fca50fcf2b866744c84f.setIcon(div_icon_31659ae2e280942aadf85cd3444ff897);
+            
+    
+            marker_cluster_b5fc81080bffbd2320c9ee8f89d7a1a6.addTo(feature_group_0f5af4d221da9f8230614e313ca7ea42);
+        
+    
+            feature_group_0f5af4d221da9f8230614e313ca7ea42.addTo(map_ca4f32082d3a33d5499fabe07bea73c4);
+        
+    
+            var feature_group_ea4394059fbb0a9e5d53d52fe669af70 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_0a0b004606a3cb5676508b39d73d75ca = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_1c5e111ff862635b6760f36a6be9ddb5 = L.marker(
+                [51.5074, -0.1278],
+                {
+}
+            ).addTo(marker_cluster_0a0b004606a3cb5676508b39d73d75ca);
+        
+    
+            var div_icon_0a085dea39079abd16d6baf9e237a7e7 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eLord Byron\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_8754c2add5a7cba90cab49a6ee3354b0 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_041c0270665366c06c92fac8971f1b79 = $(`<div id="html_041c0270665366c06c92fac8971f1b79" style="width: 100.0%; height: 100.0%;"><b>Lord Byron</b><br>Royaume-Uni</div>`)[0];
+                popup_8754c2add5a7cba90cab49a6ee3354b0.setContent(html_041c0270665366c06c92fac8971f1b79);
+            
+        
+
+        marker_1c5e111ff862635b6760f36a6be9ddb5.bindPopup(popup_8754c2add5a7cba90cab49a6ee3354b0)
+        ;
+
+        
+    
+    
+            marker_1c5e111ff862635b6760f36a6be9ddb5.bindTooltip(
+                `<div>
+                     Lord Byron
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1c5e111ff862635b6760f36a6be9ddb5.setIcon(div_icon_0a085dea39079abd16d6baf9e237a7e7);
+            
+    
+            var marker_33a700aef433de27c16d7d0877aa3800 = L.marker(
+                [55.9533, -3.1883],
+                {
+}
+            ).addTo(marker_cluster_0a0b004606a3cb5676508b39d73d75ca);
+        
+    
+            var div_icon_2e6fc1b50c851926c7a9d73a4f677747 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eWalter Scott\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_f2c75808e9cea667ecffe81ad7543ec6 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_de14d032de290d706a3e55e37a2022bd = $(`<div id="html_de14d032de290d706a3e55e37a2022bd" style="width: 100.0%; height: 100.0%;"><b>Walter Scott</b><br>Royaume-Uni</div>`)[0];
+                popup_f2c75808e9cea667ecffe81ad7543ec6.setContent(html_de14d032de290d706a3e55e37a2022bd);
+            
+        
+
+        marker_33a700aef433de27c16d7d0877aa3800.bindPopup(popup_f2c75808e9cea667ecffe81ad7543ec6)
+        ;
+
+        
+    
+    
+            marker_33a700aef433de27c16d7d0877aa3800.bindTooltip(
+                `<div>
+                     Walter Scott
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_33a700aef433de27c16d7d0877aa3800.setIcon(div_icon_2e6fc1b50c851926c7a9d73a4f677747);
+            
+    
+            var marker_832e79a7572f87e12c9d9306a803784c = L.marker(
+                [52.1917, -1.7073],
+                {
+}
+            ).addTo(marker_cluster_0a0b004606a3cb5676508b39d73d75ca);
+        
+    
+            var div_icon_4b502fd95902c03ddb87f824eca22052 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eWilliam Shakespeare\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_e9a8f95c4bff30ae4fe2cb65bc52198a = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_b19fc4d8e220ab4c553a33218904efcc = $(`<div id="html_b19fc4d8e220ab4c553a33218904efcc" style="width: 100.0%; height: 100.0%;"><b>William Shakespeare</b><br>Royaume-Uni</div>`)[0];
+                popup_e9a8f95c4bff30ae4fe2cb65bc52198a.setContent(html_b19fc4d8e220ab4c553a33218904efcc);
+            
+        
+
+        marker_832e79a7572f87e12c9d9306a803784c.bindPopup(popup_e9a8f95c4bff30ae4fe2cb65bc52198a)
+        ;
+
+        
+    
+    
+            marker_832e79a7572f87e12c9d9306a803784c.bindTooltip(
+                `<div>
+                     William Shakespeare
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_832e79a7572f87e12c9d9306a803784c.setIcon(div_icon_4b502fd95902c03ddb87f824eca22052);
+            
+    
+            marker_cluster_0a0b004606a3cb5676508b39d73d75ca.addTo(feature_group_ea4394059fbb0a9e5d53d52fe669af70);
+        
+    
+            feature_group_ea4394059fbb0a9e5d53d52fe669af70.addTo(map_ca4f32082d3a33d5499fabe07bea73c4);
+        
+    
+            var feature_group_7e33eb2ed7c6e7c383f47a17ad59cfe1 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_2bc5599dda0c07165d1d71c88d1849bb = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_00a79b278c7d13aa990b624a1f7b809f = L.marker(
+                [43.7696, 11.2558],
+                {
+}
+            ).addTo(marker_cluster_2bc5599dda0c07165d1d71c88d1849bb);
+        
+    
+            var div_icon_d56c80e90784ae1fb2169f84f95ff233 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eDante Alighieri\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_339856005264523eeb8fd8000fc3c219 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_2f0a5c11c7c7becd0d2e254c408db794 = $(`<div id="html_2f0a5c11c7c7becd0d2e254c408db794" style="width: 100.0%; height: 100.0%;"><b>Dante Alighieri</b><br>Italie</div>`)[0];
+                popup_339856005264523eeb8fd8000fc3c219.setContent(html_2f0a5c11c7c7becd0d2e254c408db794);
+            
+        
+
+        marker_00a79b278c7d13aa990b624a1f7b809f.bindPopup(popup_339856005264523eeb8fd8000fc3c219)
+        ;
+
+        
+    
+    
+            marker_00a79b278c7d13aa990b624a1f7b809f.bindTooltip(
+                `<div>
+                     Dante Alighieri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_00a79b278c7d13aa990b624a1f7b809f.setIcon(div_icon_d56c80e90784ae1fb2169f84f95ff233);
+            
+    
+            var marker_88a4866cb71c5b2b303f74fa59e6d48e = L.marker(
+                [43.4633, 11.8796],
+                {
+}
+            ).addTo(marker_cluster_2bc5599dda0c07165d1d71c88d1849bb);
+        
+    
+            var div_icon_bc4269c444ca038c0b0948cf3bf1ef49 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eP\u00e9trarque\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_842179d36e907f7d247b1f76a944263d = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_45da2a97161ac7018642f8914f8e5056 = $(`<div id="html_45da2a97161ac7018642f8914f8e5056" style="width: 100.0%; height: 100.0%;"><b>Pétrarque</b><br>Italie</div>`)[0];
+                popup_842179d36e907f7d247b1f76a944263d.setContent(html_45da2a97161ac7018642f8914f8e5056);
+            
+        
+
+        marker_88a4866cb71c5b2b303f74fa59e6d48e.bindPopup(popup_842179d36e907f7d247b1f76a944263d)
+        ;
+
+        
+    
+    
+            marker_88a4866cb71c5b2b303f74fa59e6d48e.bindTooltip(
+                `<div>
+                     Pétrarque
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_88a4866cb71c5b2b303f74fa59e6d48e.setIcon(div_icon_bc4269c444ca038c0b0948cf3bf1ef49);
+            
+    
+            var marker_7519a68821d94600575ebe0235465e26 = L.marker(
+                [43.55, 11.0167],
+                {
+}
+            ).addTo(marker_cluster_2bc5599dda0c07165d1d71c88d1849bb);
+        
+    
+            var div_icon_f17513bca377590d990e23ef50437084 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eBoccace\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_8d7e16653976374ca5a727bd9f4b0403 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_2c117b4b0ba633cac15c2a0c9d011cd0 = $(`<div id="html_2c117b4b0ba633cac15c2a0c9d011cd0" style="width: 100.0%; height: 100.0%;"><b>Boccace</b><br>Italie</div>`)[0];
+                popup_8d7e16653976374ca5a727bd9f4b0403.setContent(html_2c117b4b0ba633cac15c2a0c9d011cd0);
+            
+        
+
+        marker_7519a68821d94600575ebe0235465e26.bindPopup(popup_8d7e16653976374ca5a727bd9f4b0403)
+        ;
+
+        
+    
+    
+            marker_7519a68821d94600575ebe0235465e26.bindTooltip(
+                `<div>
+                     Boccace
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7519a68821d94600575ebe0235465e26.setIcon(div_icon_f17513bca377590d990e23ef50437084);
+            
+    
+            var marker_fe3b41d5cee00e6710267735a49d57fd = L.marker(
+                [40.6263, 14.3758],
+                {
+}
+            ).addTo(marker_cluster_2bc5599dda0c07165d1d71c88d1849bb);
+        
+    
+            var div_icon_25bf457b5ba1a19fec7de1c3e5785bf3 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eTorquato Tasso\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_a63fd79f8e404dd3a903881cf1ff7ac4 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_2be7cb2cc497006f65fdef535ee37d43 = $(`<div id="html_2be7cb2cc497006f65fdef535ee37d43" style="width: 100.0%; height: 100.0%;"><b>Torquato Tasso</b><br>Italie</div>`)[0];
+                popup_a63fd79f8e404dd3a903881cf1ff7ac4.setContent(html_2be7cb2cc497006f65fdef535ee37d43);
+            
+        
+
+        marker_fe3b41d5cee00e6710267735a49d57fd.bindPopup(popup_a63fd79f8e404dd3a903881cf1ff7ac4)
+        ;
+
+        
+    
+    
+            marker_fe3b41d5cee00e6710267735a49d57fd.bindTooltip(
+                `<div>
+                     Torquato Tasso
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fe3b41d5cee00e6710267735a49d57fd.setIcon(div_icon_25bf457b5ba1a19fec7de1c3e5785bf3);
+            
+    
+            var marker_d743324f35e6752f860ceaf0f19ee862 = L.marker(
+                [40.8518, 14.2681],
+                {
+}
+            ).addTo(marker_cluster_2bc5599dda0c07165d1d71c88d1849bb);
+        
+    
+            var div_icon_d3a227cd075397bc81fed7415fa95566 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eSalvator Rosa\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_28ef848bb836f398cf3404357f8c41a7 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_3ba0a61f7480ea3ea14fbb8ec8d0e871 = $(`<div id="html_3ba0a61f7480ea3ea14fbb8ec8d0e871" style="width: 100.0%; height: 100.0%;"><b>Salvator Rosa</b><br>Italie</div>`)[0];
+                popup_28ef848bb836f398cf3404357f8c41a7.setContent(html_3ba0a61f7480ea3ea14fbb8ec8d0e871);
+            
+        
+
+        marker_d743324f35e6752f860ceaf0f19ee862.bindPopup(popup_28ef848bb836f398cf3404357f8c41a7)
+        ;
+
+        
+    
+    
+            marker_d743324f35e6752f860ceaf0f19ee862.bindTooltip(
+                `<div>
+                     Salvator Rosa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d743324f35e6752f860ceaf0f19ee862.setIcon(div_icon_d3a227cd075397bc81fed7415fa95566);
+            
+    
+            marker_cluster_2bc5599dda0c07165d1d71c88d1849bb.addTo(feature_group_7e33eb2ed7c6e7c383f47a17ad59cfe1);
+        
+    
+            feature_group_7e33eb2ed7c6e7c383f47a17ad59cfe1.addTo(map_ca4f32082d3a33d5499fabe07bea73c4);
+        
+    
+            var feature_group_95df34570a4856382cfb7148a7bff32b = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_0be954e36aeef01e30c73be56e868812 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_891a548c11eea273e1070356a6fae964 = L.marker(
+                [40.4819, -3.3635],
+                {
+}
+            ).addTo(marker_cluster_0be954e36aeef01e30c73be56e868812);
+        
+    
+            var div_icon_d36f998a280d461ba7585e1df7ef262f = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eMiguel de Cervant\u00e8s\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_830152855cd5e97a7974afd6dd670dfc = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_f6a9511fae1702d4258bb429b4e3c2da = $(`<div id="html_f6a9511fae1702d4258bb429b4e3c2da" style="width: 100.0%; height: 100.0%;"><b>Miguel de Cervantès</b><br>Espagne</div>`)[0];
+                popup_830152855cd5e97a7974afd6dd670dfc.setContent(html_f6a9511fae1702d4258bb429b4e3c2da);
+            
+        
+
+        marker_891a548c11eea273e1070356a6fae964.bindPopup(popup_830152855cd5e97a7974afd6dd670dfc)
+        ;
+
+        
+    
+    
+            marker_891a548c11eea273e1070356a6fae964.bindTooltip(
+                `<div>
+                     Miguel de Cervantès
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_891a548c11eea273e1070356a6fae964.setIcon(div_icon_d36f998a280d461ba7585e1df7ef262f);
+            
+    
+            marker_cluster_0be954e36aeef01e30c73be56e868812.addTo(feature_group_95df34570a4856382cfb7148a7bff32b);
+        
+    
+            feature_group_95df34570a4856382cfb7148a7bff32b.addTo(map_ca4f32082d3a33d5499fabe07bea73c4);
+        
+    
+            var feature_group_f12dfc99a5272ba112aee18e5bb7fc57 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_0a2dcc5775c83e22fa13e6492b8c6ee7 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_fcfc54573e3027d6f90e01bda3f32749 = L.marker(
+                [38.4192, 27.1287],
+                {
+}
+            ).addTo(marker_cluster_0a2dcc5775c83e22fa13e6492b8c6ee7);
+        
+    
+            var div_icon_d9228dbd67d15d3a3b6e017d3d853352 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eHom\u00e8re\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_f01f4163834ab4f179e21722f241a710 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_9936ee33f2d5ede77da1365f6ff8f93b = $(`<div id="html_9936ee33f2d5ede77da1365f6ff8f93b" style="width: 100.0%; height: 100.0%;"><b>Homère</b><br>Grèce antique</div>`)[0];
+                popup_f01f4163834ab4f179e21722f241a710.setContent(html_9936ee33f2d5ede77da1365f6ff8f93b);
+            
+        
+
+        marker_fcfc54573e3027d6f90e01bda3f32749.bindPopup(popup_f01f4163834ab4f179e21722f241a710)
+        ;
+
+        
+    
+    
+            marker_fcfc54573e3027d6f90e01bda3f32749.bindTooltip(
+                `<div>
+                     Homère
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fcfc54573e3027d6f90e01bda3f32749.setIcon(div_icon_d9228dbd67d15d3a3b6e017d3d853352);
+            
+    
+            var marker_83e0304ff78a2402a260aac407c6ae96 = L.marker(
+                [37.754, 26.977],
+                {
+}
+            ).addTo(marker_cluster_0a2dcc5775c83e22fa13e6492b8c6ee7);
+        
+    
+            var div_icon_f3c9a8d1062edb75c36cbd26dcf4b3c8 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003ePythagore\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_5994b78ca5b8849afd465ab5970ee683 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_6ff383f0e53e35661b4124aa7c2a2bf7 = $(`<div id="html_6ff383f0e53e35661b4124aa7c2a2bf7" style="width: 100.0%; height: 100.0%;"><b>Pythagore</b><br>Grèce antique</div>`)[0];
+                popup_5994b78ca5b8849afd465ab5970ee683.setContent(html_6ff383f0e53e35661b4124aa7c2a2bf7);
+            
+        
+
+        marker_83e0304ff78a2402a260aac407c6ae96.bindPopup(popup_5994b78ca5b8849afd465ab5970ee683)
+        ;
+
+        
+    
+    
+            marker_83e0304ff78a2402a260aac407c6ae96.bindTooltip(
+                `<div>
+                     Pythagore
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_83e0304ff78a2402a260aac407c6ae96.setIcon(div_icon_f3c9a8d1062edb75c36cbd26dcf4b3c8);
+            
+    
+            var marker_62f58b6eb50775d9d5edb95158951f9e = L.marker(
+                [37.9838, 23.7275],
+                {
+}
+            ).addTo(marker_cluster_0a2dcc5775c83e22fa13e6492b8c6ee7);
+        
+    
+            var div_icon_8fd435304442bdfb8d55eac8599b7188 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003ePlaton\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_8a4ac9766ab9b515bc6f2c44fa261470 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_b9ae85ff55d232f1eea02b1098265378 = $(`<div id="html_b9ae85ff55d232f1eea02b1098265378" style="width: 100.0%; height: 100.0%;"><b>Platon</b><br>Grèce antique</div>`)[0];
+                popup_8a4ac9766ab9b515bc6f2c44fa261470.setContent(html_b9ae85ff55d232f1eea02b1098265378);
+            
+        
+
+        marker_62f58b6eb50775d9d5edb95158951f9e.bindPopup(popup_8a4ac9766ab9b515bc6f2c44fa261470)
+        ;
+
+        
+    
+    
+            marker_62f58b6eb50775d9d5edb95158951f9e.bindTooltip(
+                `<div>
+                     Platon
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_62f58b6eb50775d9d5edb95158951f9e.setIcon(div_icon_8fd435304442bdfb8d55eac8599b7188);
+            
+    
+            var marker_517740ff9a35d420fff5b0a56d5ff823 = L.marker(
+                [40.381, 23.926],
+                {
+}
+            ).addTo(marker_cluster_0a2dcc5775c83e22fa13e6492b8c6ee7);
+        
+    
+            var div_icon_f0f0c6c816c0e9ccec48d47cede1b1e1 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eAristote\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_ad3ebf68bf6dbc27a005e5839630b96a = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_3077b3178557a684acc999653cb529aa = $(`<div id="html_3077b3178557a684acc999653cb529aa" style="width: 100.0%; height: 100.0%;"><b>Aristote</b><br>Grèce antique</div>`)[0];
+                popup_ad3ebf68bf6dbc27a005e5839630b96a.setContent(html_3077b3178557a684acc999653cb529aa);
+            
+        
+
+        marker_517740ff9a35d420fff5b0a56d5ff823.bindPopup(popup_ad3ebf68bf6dbc27a005e5839630b96a)
+        ;
+
+        
+    
+    
+            marker_517740ff9a35d420fff5b0a56d5ff823.bindTooltip(
+                `<div>
+                     Aristote
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_517740ff9a35d420fff5b0a56d5ff823.setIcon(div_icon_f0f0c6c816c0e9ccec48d47cede1b1e1);
+            
+    
+            var marker_606ff119495b3de72348e84fecd9d149 = L.marker(
+                [37.0755, 22.4297],
+                {
+}
+            ).addTo(marker_cluster_0a2dcc5775c83e22fa13e6492b8c6ee7);
+        
+    
+            var div_icon_9bdb62830e2d9f6e93505bef6289f863 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eLycurgue\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_0f70de858607677cff93544e347153c9 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_d365aafd34fff69292b38120c0c953cc = $(`<div id="html_d365aafd34fff69292b38120c0c953cc" style="width: 100.0%; height: 100.0%;"><b>Lycurgue</b><br>Grèce antique</div>`)[0];
+                popup_0f70de858607677cff93544e347153c9.setContent(html_d365aafd34fff69292b38120c0c953cc);
+            
+        
+
+        marker_606ff119495b3de72348e84fecd9d149.bindPopup(popup_0f70de858607677cff93544e347153c9)
+        ;
+
+        
+    
+    
+            marker_606ff119495b3de72348e84fecd9d149.bindTooltip(
+                `<div>
+                     Lycurgue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_606ff119495b3de72348e84fecd9d149.setIcon(div_icon_9bdb62830e2d9f6e93505bef6289f863);
+            
+    
+            var marker_e964e83e9f4386edaa4256805a115ee5 = L.marker(
+                [37.9838, 23.7275],
+                {
+}
+            ).addTo(marker_cluster_0a2dcc5775c83e22fa13e6492b8c6ee7);
+        
+    
+            var div_icon_74c8ded9a3308258ff68a0bdf91996b9 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eD\u00e9mosth\u00e8ne\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_b3cff7b6d6b3fe89dd8ac825ac01ba1f = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_57ce99c11a195dbb1e621009476a112e = $(`<div id="html_57ce99c11a195dbb1e621009476a112e" style="width: 100.0%; height: 100.0%;"><b>Démosthène</b><br>Grèce antique</div>`)[0];
+                popup_b3cff7b6d6b3fe89dd8ac825ac01ba1f.setContent(html_57ce99c11a195dbb1e621009476a112e);
+            
+        
+
+        marker_e964e83e9f4386edaa4256805a115ee5.bindPopup(popup_b3cff7b6d6b3fe89dd8ac825ac01ba1f)
+        ;
+
+        
+    
+    
+            marker_e964e83e9f4386edaa4256805a115ee5.bindTooltip(
+                `<div>
+                     Démosthène
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e964e83e9f4386edaa4256805a115ee5.setIcon(div_icon_74c8ded9a3308258ff68a0bdf91996b9);
+            
+    
+            var marker_0d2878a19a7a41c8f6686cc331ea34a7 = L.marker(
+                [37.754, 26.977],
+                {
+}
+            ).addTo(marker_cluster_0a2dcc5775c83e22fa13e6492b8c6ee7);
+        
+    
+            var div_icon_9c12f9007f243253c7e3ce022d23a5f7 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003e\u00c9picure\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_273ddb76373d1531e182502ca7c93945 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_933be0863ad035dce852c52eab5f791c = $(`<div id="html_933be0863ad035dce852c52eab5f791c" style="width: 100.0%; height: 100.0%;"><b>Épicure</b><br>Grèce antique</div>`)[0];
+                popup_273ddb76373d1531e182502ca7c93945.setContent(html_933be0863ad035dce852c52eab5f791c);
+            
+        
+
+        marker_0d2878a19a7a41c8f6686cc331ea34a7.bindPopup(popup_273ddb76373d1531e182502ca7c93945)
+        ;
+
+        
+    
+    
+            marker_0d2878a19a7a41c8f6686cc331ea34a7.bindTooltip(
+                `<div>
+                     Épicure
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0d2878a19a7a41c8f6686cc331ea34a7.setIcon(div_icon_9c12f9007f243253c7e3ce022d23a5f7);
+            
+    
+            marker_cluster_0a2dcc5775c83e22fa13e6492b8c6ee7.addTo(feature_group_f12dfc99a5272ba112aee18e5bb7fc57);
+        
+    
+            feature_group_f12dfc99a5272ba112aee18e5bb7fc57.addTo(map_ca4f32082d3a33d5499fabe07bea73c4);
+        
+    
+            var feature_group_8ed9fc486da9faa65a3a4f920bc458ac = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_251a8e49348a549035479a604846147a = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_efc106a6402777d7b3082fdf6b9c8071 = L.marker(
+                [41.725, 13.615],
+                {
+}
+            ).addTo(marker_cluster_251a8e49348a549035479a604846147a);
+        
+    
+            var div_icon_77a42170e652f36acdc405d6b54eee16 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eCic\u00e9ron\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_4bd4bbbc5c213c4dc4cb9d7d983885a5 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_1c532cd6a7f93cccdc277fcb1988fc57 = $(`<div id="html_1c532cd6a7f93cccdc277fcb1988fc57" style="width: 100.0%; height: 100.0%;"><b>Cicéron</b><br>Italie (Empire romain)</div>`)[0];
+                popup_4bd4bbbc5c213c4dc4cb9d7d983885a5.setContent(html_1c532cd6a7f93cccdc277fcb1988fc57);
+            
+        
+
+        marker_efc106a6402777d7b3082fdf6b9c8071.bindPopup(popup_4bd4bbbc5c213c4dc4cb9d7d983885a5)
+        ;
+
+        
+    
+    
+            marker_efc106a6402777d7b3082fdf6b9c8071.bindTooltip(
+                `<div>
+                     Cicéron
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_efc106a6402777d7b3082fdf6b9c8071.setIcon(div_icon_77a42170e652f36acdc405d6b54eee16);
+            
+    
+            marker_cluster_251a8e49348a549035479a604846147a.addTo(feature_group_8ed9fc486da9faa65a3a4f920bc458ac);
+        
+    
+            feature_group_8ed9fc486da9faa65a3a4f920bc458ac.addTo(map_ca4f32082d3a33d5499fabe07bea73c4);
+        
+    
+            var feature_group_f0464e8bc9c6c9a43792bc183dc7ace5 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_b1c3acf0510305b8e996335893c89250 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_4384ac59ea60f37e917e9e78dcae1ed9 = L.marker(
+                [46.2044, 6.1432],
+                {
+}
+            ).addTo(marker_cluster_b1c3acf0510305b8e996335893c89250);
+        
+    
+            var div_icon_c537e9202aee44c6eafe83eed2f57ea9 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eJean-Jacques Rousseau\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_e86803ffd89697294e2914f82757ae40 = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_c41ab00e685e03a490daeb4a28655149 = $(`<div id="html_c41ab00e685e03a490daeb4a28655149" style="width: 100.0%; height: 100.0%;"><b>Jean-Jacques Rousseau</b><br>Suisse / espace germanique</div>`)[0];
+                popup_e86803ffd89697294e2914f82757ae40.setContent(html_c41ab00e685e03a490daeb4a28655149);
+            
+        
+
+        marker_4384ac59ea60f37e917e9e78dcae1ed9.bindPopup(popup_e86803ffd89697294e2914f82757ae40)
+        ;
+
+        
+    
+    
+            marker_4384ac59ea60f37e917e9e78dcae1ed9.bindTooltip(
+                `<div>
+                     Jean-Jacques Rousseau
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4384ac59ea60f37e917e9e78dcae1ed9.setIcon(div_icon_c537e9202aee44c6eafe83eed2f57ea9);
+            
+    
+            var marker_7904c23bdd388a8a4a8d537c203461a8 = L.marker(
+                [47.1286, 8.747],
+                {
+}
+            ).addTo(marker_cluster_b1c3acf0510305b8e996335893c89250);
+        
+    
+            var div_icon_2f1b5e803eedde18460fdf601058aef8 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eParacelse\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_d82cd8e6ea6eb196bb25a381cf50fe3d = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_8220f45ad998295b6372ef98e839fdc5 = $(`<div id="html_8220f45ad998295b6372ef98e839fdc5" style="width: 100.0%; height: 100.0%;"><b>Paracelse</b><br>Suisse / espace germanique</div>`)[0];
+                popup_d82cd8e6ea6eb196bb25a381cf50fe3d.setContent(html_8220f45ad998295b6372ef98e839fdc5);
+            
+        
+
+        marker_7904c23bdd388a8a4a8d537c203461a8.bindPopup(popup_d82cd8e6ea6eb196bb25a381cf50fe3d)
+        ;
+
+        
+    
+    
+            marker_7904c23bdd388a8a4a8d537c203461a8.bindTooltip(
+                `<div>
+                     Paracelse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7904c23bdd388a8a4a8d537c203461a8.setIcon(div_icon_2f1b5e803eedde18460fdf601058aef8);
+            
+    
+            marker_cluster_b1c3acf0510305b8e996335893c89250.addTo(feature_group_f0464e8bc9c6c9a43792bc183dc7ace5);
+        
+    
+            feature_group_f0464e8bc9c6c9a43792bc183dc7ace5.addTo(map_ca4f32082d3a33d5499fabe07bea73c4);
+        
+    
+            var feature_group_c80481e0e8549d0d800306a05f77c00d = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_d4e050f47a93d20088416dab5b0c9c41 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_f98ae24f116f1f4197fbf340c48f8dea = L.marker(
+                [35.6, 116.9833],
+                {
+}
+            ).addTo(marker_cluster_d4e050f47a93d20088416dab5b0c9c41);
+        
+    
+            var div_icon_e8a5202eeacd8c87179aa916853d15c5 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eConfucius\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_2b9fb8e471077247bff6733de6a6c9df = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_d0759c7431a762cf234ace7181596f5c = $(`<div id="html_d0759c7431a762cf234ace7181596f5c" style="width: 100.0%; height: 100.0%;"><b>Confucius</b><br>Chine</div>`)[0];
+                popup_2b9fb8e471077247bff6733de6a6c9df.setContent(html_d0759c7431a762cf234ace7181596f5c);
+            
+        
+
+        marker_f98ae24f116f1f4197fbf340c48f8dea.bindPopup(popup_2b9fb8e471077247bff6733de6a6c9df)
+        ;
+
+        
+    
+    
+            marker_f98ae24f116f1f4197fbf340c48f8dea.bindTooltip(
+                `<div>
+                     Confucius
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f98ae24f116f1f4197fbf340c48f8dea.setIcon(div_icon_e8a5202eeacd8c87179aa916853d15c5);
+            
+    
+            marker_cluster_d4e050f47a93d20088416dab5b0c9c41.addTo(feature_group_c80481e0e8549d0d800306a05f77c00d);
+        
+    
+            feature_group_c80481e0e8549d0d800306a05f77c00d.addTo(map_ca4f32082d3a33d5499fabe07bea73c4);
+        
+    
+            var feature_group_4c63d974696f3c60e2d3c219d757a1f8 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_01e2a296d8ab3dbb2a2505222fcddb77 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_cfe1da567d1fd839b6c8cbd84075a69d = L.marker(
+                [29.5918, 52.5837],
+                {
+}
+            ).addTo(marker_cluster_01e2a296d8ab3dbb2a2505222fcddb77);
+        
+    
+            var div_icon_f370453a291a24ac98b77ce545448801 = L.divIcon({
+  "html": "\n                        \u003cdiv style=\"\n                            font-size: 12px;\n                            color: black;\n                            background-color: rgba(255,255,255,0.7);\n                            padding: 2px 4px;\n                            border-radius: 3px;\n                            white-space: nowrap;\n                        \"\u003eSaadi\u003c/div\u003e\n                        ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+        var popup_e39aedcfa561a6846bb8d3442898eacf = L.popup({
+  "maxWidth": 1,
+});
+
+        
+            
+                var html_88a8a7c241d0efaa3f9eaa530e3bc7ac = $(`<div id="html_88a8a7c241d0efaa3f9eaa530e3bc7ac" style="width: 100.0%; height: 100.0%;"><b>Saadi</b><br>Iran (Perse)</div>`)[0];
+                popup_e39aedcfa561a6846bb8d3442898eacf.setContent(html_88a8a7c241d0efaa3f9eaa530e3bc7ac);
+            
+        
+
+        marker_cfe1da567d1fd839b6c8cbd84075a69d.bindPopup(popup_e39aedcfa561a6846bb8d3442898eacf)
+        ;
+
+        
+    
+    
+            marker_cfe1da567d1fd839b6c8cbd84075a69d.bindTooltip(
+                `<div>
+                     Saadi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cfe1da567d1fd839b6c8cbd84075a69d.setIcon(div_icon_f370453a291a24ac98b77ce545448801);
+            
+    
+            marker_cluster_01e2a296d8ab3dbb2a2505222fcddb77.addTo(feature_group_4c63d974696f3c60e2d3c219d757a1f8);
+        
+    
+            feature_group_4c63d974696f3c60e2d3c219d757a1f8.addTo(map_ca4f32082d3a33d5499fabe07bea73c4);
+        
+    
+            var layer_control_752f710e85d2a03dee9dcadecb58bbfa_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_42ad27cddb24cf5005e6c7f93402451f,
+                },
+                overlays :  {
+                    "France" : feature_group_0f5af4d221da9f8230614e313ca7ea42,
+                    "Royaume-Uni" : feature_group_ea4394059fbb0a9e5d53d52fe669af70,
+                    "Italie" : feature_group_7e33eb2ed7c6e7c383f47a17ad59cfe1,
+                    "Espagne" : feature_group_95df34570a4856382cfb7148a7bff32b,
+                    "Gr\u00e8ce antique" : feature_group_f12dfc99a5272ba112aee18e5bb7fc57,
+                    "Italie (Empire romain)" : feature_group_8ed9fc486da9faa65a3a4f920bc458ac,
+                    "Suisse / espace germanique" : feature_group_f0464e8bc9c6c9a43792bc183dc7ace5,
+                    "Chine" : feature_group_c80481e0e8549d0d800306a05f77c00d,
+                    "Iran (Perse)" : feature_group_4c63d974696f3c60e2d3c219d757a1f8,
+                },
+            };
+            let layer_control_752f710e85d2a03dee9dcadecb58bbfa = L.control.layers(
+                layer_control_752f710e85d2a03dee9dcadecb58bbfa_layers.base_layers,
+                layer_control_752f710e85d2a03dee9dcadecb58bbfa_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_ca4f32082d3a33d5499fabe07bea73c4);
+
+        
+    
+            tile_layer_42ad27cddb24cf5005e6c7f93402451f.addTo(map_ca4f32082d3a33d5499fabe07bea73c4);
+        
+    
+                marker_3d62af7ef5be50d1c2dafd2e944578ca.setIcon(div_icon_f4003f7aa8a371f1e0250d39761478e7);
+            
+    
+                marker_94ec561ee825eb27c4cd12103aec12be.setIcon(div_icon_2262ad596c1d25d0263dcb62ed412f62);
+            
+    
+                marker_b31161d182b0310bd42f91ff40bc782a.setIcon(div_icon_e17d4136011e8439402b6eaf0141d532);
+            
+    
+                marker_2c3d82690329bd32f6e03be344cef4a8.setIcon(div_icon_bfea7f36000d5b4df79aa77e670014b2);
+            
+    
+                marker_1e88a9321e629f8f37a7d46b24e58558.setIcon(div_icon_5e15aa3ff7b496ce00653a3409ab4bb9);
+            
+    
+                marker_04c4547c85be91b59a909005b9e2c617.setIcon(div_icon_e390c476ad7427948df1f6606668d9d3);
+            
+    
+                marker_e8ffcc2d8a2bafb54320f095e8b34821.setIcon(div_icon_31b75563b5111bbe9c66826fd6e77e9e);
+            
+    
+                marker_2bef65d27d88a3ea172d018832452a27.setIcon(div_icon_01a1459a65b15c06bc3fac64ad47ecad);
+            
+    
+                marker_e81d6d7399c0cb4d78adc11dfcabe849.setIcon(div_icon_2ae95601154cfb3de3579f175f7b2b0c);
+            
+    
+                marker_58407b7b8151d6dac3532e66a4fcfcdb.setIcon(div_icon_30970540085129eba8f50e12aabe28fb);
+            
+    
+                marker_91fbea54baffa43e9134494c063f5f37.setIcon(div_icon_4acee08ec0a6c7f77a19a3f77642317d);
+            
+    
+                marker_830c38dd9e73dd8c4494267071bba914.setIcon(div_icon_9d71ef3fbb32dabad179e5aa2cf8ddf1);
+            
+    
+                marker_633a78336e80a0c654ca601221f02db9.setIcon(div_icon_9c375c65e704c6a3ee064a70180f1814);
+            
+    
+                marker_1faf867fce05fdb39d79048f3f60c2ec.setIcon(div_icon_29f52ea36519c8a389b63c673ef42015);
+            
+    
+                marker_8e38b0c737f81de45d8b896fc0617daa.setIcon(div_icon_11f58a72987634cea8de19c958bbe9c1);
+            
+    
+                marker_eebb5c60fa88fca50fcf2b866744c84f.setIcon(div_icon_31659ae2e280942aadf85cd3444ff897);
+            
+    
+            marker_cluster_b5fc81080bffbd2320c9ee8f89d7a1a6.addTo(feature_group_0f5af4d221da9f8230614e313ca7ea42);
+        
+    
+            feature_group_0f5af4d221da9f8230614e313ca7ea42.addTo(map_ca4f32082d3a33d5499fabe07bea73c4);
+        
+    
+                marker_1c5e111ff862635b6760f36a6be9ddb5.setIcon(div_icon_0a085dea39079abd16d6baf9e237a7e7);
+            
+    
+                marker_33a700aef433de27c16d7d0877aa3800.setIcon(div_icon_2e6fc1b50c851926c7a9d73a4f677747);
+            
+    
+                marker_832e79a7572f87e12c9d9306a803784c.setIcon(div_icon_4b502fd95902c03ddb87f824eca22052);
+            
+    
+            marker_cluster_0a0b004606a3cb5676508b39d73d75ca.addTo(feature_group_ea4394059fbb0a9e5d53d52fe669af70);
+        
+    
+            feature_group_ea4394059fbb0a9e5d53d52fe669af70.addTo(map_ca4f32082d3a33d5499fabe07bea73c4);
+        
+    
+                marker_00a79b278c7d13aa990b624a1f7b809f.setIcon(div_icon_d56c80e90784ae1fb2169f84f95ff233);
+            
+    
+                marker_88a4866cb71c5b2b303f74fa59e6d48e.setIcon(div_icon_bc4269c444ca038c0b0948cf3bf1ef49);
+            
+    
+                marker_7519a68821d94600575ebe0235465e26.setIcon(div_icon_f17513bca377590d990e23ef50437084);
+            
+    
+                marker_fe3b41d5cee00e6710267735a49d57fd.setIcon(div_icon_25bf457b5ba1a19fec7de1c3e5785bf3);
+            
+    
+                marker_d743324f35e6752f860ceaf0f19ee862.setIcon(div_icon_d3a227cd075397bc81fed7415fa95566);
+            
+    
+            marker_cluster_2bc5599dda0c07165d1d71c88d1849bb.addTo(feature_group_7e33eb2ed7c6e7c383f47a17ad59cfe1);
+        
+    
+            feature_group_7e33eb2ed7c6e7c383f47a17ad59cfe1.addTo(map_ca4f32082d3a33d5499fabe07bea73c4);
+        
+    
+                marker_891a548c11eea273e1070356a6fae964.setIcon(div_icon_d36f998a280d461ba7585e1df7ef262f);
+            
+    
+            marker_cluster_0be954e36aeef01e30c73be56e868812.addTo(feature_group_95df34570a4856382cfb7148a7bff32b);
+        
+    
+            feature_group_95df34570a4856382cfb7148a7bff32b.addTo(map_ca4f32082d3a33d5499fabe07bea73c4);
+        
+    
+                marker_fcfc54573e3027d6f90e01bda3f32749.setIcon(div_icon_d9228dbd67d15d3a3b6e017d3d853352);
+            
+    
+                marker_83e0304ff78a2402a260aac407c6ae96.setIcon(div_icon_f3c9a8d1062edb75c36cbd26dcf4b3c8);
+            
+    
+                marker_62f58b6eb50775d9d5edb95158951f9e.setIcon(div_icon_8fd435304442bdfb8d55eac8599b7188);
+            
+    
+                marker_517740ff9a35d420fff5b0a56d5ff823.setIcon(div_icon_f0f0c6c816c0e9ccec48d47cede1b1e1);
+            
+    
+                marker_606ff119495b3de72348e84fecd9d149.setIcon(div_icon_9bdb62830e2d9f6e93505bef6289f863);
+            
+    
+                marker_e964e83e9f4386edaa4256805a115ee5.setIcon(div_icon_74c8ded9a3308258ff68a0bdf91996b9);
+            
+    
+                marker_0d2878a19a7a41c8f6686cc331ea34a7.setIcon(div_icon_9c12f9007f243253c7e3ce022d23a5f7);
+            
+    
+            marker_cluster_0a2dcc5775c83e22fa13e6492b8c6ee7.addTo(feature_group_f12dfc99a5272ba112aee18e5bb7fc57);
+        
+    
+            feature_group_f12dfc99a5272ba112aee18e5bb7fc57.addTo(map_ca4f32082d3a33d5499fabe07bea73c4);
+        
+    
+                marker_efc106a6402777d7b3082fdf6b9c8071.setIcon(div_icon_77a42170e652f36acdc405d6b54eee16);
+            
+    
+            marker_cluster_251a8e49348a549035479a604846147a.addTo(feature_group_8ed9fc486da9faa65a3a4f920bc458ac);
+        
+    
+            feature_group_8ed9fc486da9faa65a3a4f920bc458ac.addTo(map_ca4f32082d3a33d5499fabe07bea73c4);
+        
+    
+                marker_4384ac59ea60f37e917e9e78dcae1ed9.setIcon(div_icon_c537e9202aee44c6eafe83eed2f57ea9);
+            
+    
+                marker_7904c23bdd388a8a4a8d537c203461a8.setIcon(div_icon_2f1b5e803eedde18460fdf601058aef8);
+            
+    
+            marker_cluster_b1c3acf0510305b8e996335893c89250.addTo(feature_group_f0464e8bc9c6c9a43792bc183dc7ace5);
+        
+    
+            feature_group_f0464e8bc9c6c9a43792bc183dc7ace5.addTo(map_ca4f32082d3a33d5499fabe07bea73c4);
+        
+    
+                marker_f98ae24f116f1f4197fbf340c48f8dea.setIcon(div_icon_e8a5202eeacd8c87179aa916853d15c5);
+            
+    
+            marker_cluster_d4e050f47a93d20088416dab5b0c9c41.addTo(feature_group_c80481e0e8549d0d800306a05f77c00d);
+        
+    
+            feature_group_c80481e0e8549d0d800306a05f77c00d.addTo(map_ca4f32082d3a33d5499fabe07bea73c4);
+        
+    
+                marker_cfe1da567d1fd839b6c8cbd84075a69d.setIcon(div_icon_f370453a291a24ac98b77ce545448801);
+            
+    
+            marker_cluster_01e2a296d8ab3dbb2a2505222fcddb77.addTo(feature_group_4c63d974696f3c60e2d3c219d757a1f8);
+        
+    
+            feature_group_4c63d974696f3c60e2d3c219d757a1f8.addTo(map_ca4f32082d3a33d5499fabe07bea73c4);
+        
+</script>
+</html>
